@@ -1,7 +1,8 @@
 import { ArrowRight, CreditCard } from "lucide-react";
+import { LandingImage } from "./landing-image";
 export const HeroSection = () => {
   return (
-    <div className=" py-20 px-0 ">
+    <div className=" py-16 px-0 ">
       <div className=" max-w-3xl  flex flex-col gap-1 ">
         <div className="flex justify-start ">
           <span className="px-1  border   border-dashed border-secondary-foreground/60 flex items-center font-medium   font-mono tracking-tighter  text-secondary-foreground/70">
@@ -13,7 +14,7 @@ export const HeroSection = () => {
           <span className="text-primary">AI</span>
         </h1>
       </div>
-      <p className="  text-base   py-1 max-w-2xl    text-secondary-foreground/80 leading-none  text-start font-sans">
+      <p className="  text-[14px]   py-1 max-w-2xl    text-secondary-foreground/80   text-start font-sans">
         AI-powered platform to design, visualize, optimize and export production
         ready database schemas in minutes.
       </p>
@@ -28,6 +29,7 @@ export const HeroSection = () => {
           <span className="mt-0.5">No Card Required</span>
         </span>
       </div>
+      <LandingImage />
     </div>
   );
 };

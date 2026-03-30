@@ -2,7 +2,7 @@ import { Github } from "lucide-react";
 
 export const Features = () => {
   return (
-    <div className=" w-full py-8 px-1 ">
+    <div className=" w-full py-6  px-1 ">
       <div className="w-full  flex  flex-col  gap-0.5 justify-start">
         <h1 className="text-3xl lg:text-4xl font-sans font-extrabold text-start">
           Why Enops?

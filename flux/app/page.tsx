@@ -1,9 +1,9 @@
-import { Section } from "@/components/ui/screen";
-import { NavBar } from "@/components/ui/navbar-view";
-import { HeroSection } from "@/components/ui/hero-section";
-import { Features } from "@/components/ui/features-section";
-import { FAQ } from "@/components/ui/faq";
-import { Footer } from "@/components/ui/footer";
+import { Section } from "@/components/screen";
+import { NavBar } from "@/components/navbar-view";
+import { HeroSection } from "@/components/hero-section";
+import { Features } from "@/components/features-section";
+import { FAQ } from "@/components/faq";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <Features />
       <FAQ />
-      {/* <Footer /> */}
+      <Footer />
     </Section>
   );
 }
