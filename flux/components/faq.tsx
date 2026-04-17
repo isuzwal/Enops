@@ -7,7 +7,10 @@ import {
 
 export const FAQ = () => {
   return (
-    <div className="w-full  px-1  flex md:flex-row  flex-col justify-between gap-4 py-6">
+    <div
+      id="faq"
+      className="w-full  px-1  flex md:flex-row  flex-col justify-between gap-4 py-6"
+    >
       <div className=" flex flex-col  py-2 ">
         <h1
           className="text-3xl lg:text-4xl font-sans font-extrabold leading-noraml

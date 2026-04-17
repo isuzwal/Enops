@@ -2,7 +2,7 @@ import { Database, Github, Settings, TrendingUp, Zap } from "lucide-react";
 
 export const Features = () => {
   return (
-    <div className=" w-full py-6  px-1 ">
+    <div id="features" className=" w-full py-16  px-1 scroll-padding-top ">
       <div className="w-full  flex  flex-col  gap-0.5 justify-start">
         <h1 className="text-3xl lg:text-4xl font-sans font-extrabold text-start">
           Why Enops?
@@ -70,11 +70,11 @@ export const Features = () => {
       {/*Works*/}
       <div className="py-16">
         <div className="w-full  flex  flex-col  gap-0.5 justify-start">
-          <h2 className="text-[20px] md:text-[22px] tracking-tight font-medium">
+          <h1 className="text-3xl lg:text-4xl font-sans font-extrabold text-start">
             How It Works?
-          </h2>
+          </h1>
           <p className="text-sm text-foreground/80 text-start leading-normal font-medium">
-            From idea production in 4 simple steps
+            From idea production in four simple steps
           </p>
         </div>
         <div className=" mt-4   grid grid-cols-1  sm:grid-cols-2  w-full">

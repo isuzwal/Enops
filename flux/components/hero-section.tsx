@@ -1,12 +1,14 @@
 "use client";
 import { ArrowRight, CreditCard } from "lucide-react";
 import { LandingImage } from "./landing-image";
+
+import { motion, stagger, useAnimate } from "motion/react";
 import { useEffect } from "react";
-import { useAnimate, motion, stagger } from "motion/react";
 export const HeroSection = () => {
   const [scope, animate] = useAnimate();
-  const SubheadingWords =
-    "AI powered platform to design, visualize, optimize and export production ready database schemas in minutes.";
+
+  const words = `
+  AI powered platform to design, visualize, optimize and export production ready database schemas in minutes`;
 
   const Animationwords = () => {
     animate(
@@ -72,17 +74,17 @@ export const HeroSection = () => {
         <motion.div
           initial={{
             opacity: 0,
-            filter: "blur(20px)",
-            y: -10,
+            filter: "blur(10px)",
+            y: 10,
           }}
           animate={{
-            opacity: 10,
+            opacity: 1,
             y: 0,
             filter: "blur(0px)",
           }}
           transition={{
             duration: 0.5,
-            delay: 0.3,
+            delay: 0.2,
           }}
           className=" max-w-3xl  flex flex-col gap-1 "
         >
@@ -96,11 +98,11 @@ export const HeroSection = () => {
             <span className="text-primary">AI</span>
           </motion.h1>
         </motion.div>
-        <p
+        <motion.p
           ref={scope}
-          className="text-[14px]  inline-block  py-1 max-w-2xl    text-secondary-foreground/80   text-start font-sans"
+          className="text-[14px]  inline-block   max-w-2xl    text-secondary-foreground/80   text-start font-sans"
         >
-          {SubheadingWords.split("").map((char, index) => (
+          {words.split("").map((char, index) => (
             <motion.span
               style={{
                 opacity: 0,
@@ -112,24 +114,24 @@ export const HeroSection = () => {
               {char === " " ? "\u00A0" : char}
             </motion.span>
           ))}
-        </p>
+        </motion.p>
         <div className="py-1  flex flex-col   justify-start">
           <motion.button
             initial={{
-              y: 0,
               opacity: 0,
               filter: "blur(10px)",
+              y: 0,
             }}
             animate={{
               y: 0,
-              opacity: 10,
+              opacity: 1,
               filter: "blur(0px)",
             }}
             transition={{
-              duration: 0.5,
-              delay: 0.2,
+              duration: 0.4,
+              delay: 0.3,
             }}
-            className="group font-medium cursor-pointer  hover:bg-primary/60 duration-300 transition-all ease-in-out font-sans text-[14px]  w-40 justify-center  flex gap-1.5 items-center bg-primary text-white px-1.5 py-1  text-center"
+            className="group rounded-md font-medium cursor-pointer  hover:bg-primary/60 duration-300 transition-all ease-in-out font-sans text-[14px]  w-40 justify-center  flex gap-1.5 items-center bg-primary text-white px-1.5 py-1  text-center"
           >
             <span>Try Pro Version</span>
             <ArrowRight className="size-5 group-hover:translate-x-1 duration-300 ease-in-out " />
@@ -137,7 +139,7 @@ export const HeroSection = () => {
 
           <motion.span
             initial={{
-              y: 0,
+              y: 2,
               opacity: 0,
               filter: "blur(10px)",
             }}
@@ -148,7 +150,7 @@ export const HeroSection = () => {
             }}
             transition={{
               duration: 0.5,
-              delay: 0.6,
+              delay: 0.3,
             }}
             className="flex px-0.5 gap-0.5 items-center tracking-tight text-[12px] text-secondary-foreground/60 font-medium"
           >
