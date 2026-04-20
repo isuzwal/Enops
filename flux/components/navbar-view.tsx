@@ -25,7 +25,7 @@ export const NavBar = () => {
   // };
   return (
     <nav
-      className={`flex sticky top-0 z-40 w-full justify-between items-center px-2 py-1 transition-colors duration-300  ${
+      className={`flex sticky top-0 z-40 w-full  max-w-5xl mx-auto justify-between items-center px-2 py-1 transition-colors duration-300  ${
         showShadow ? "  bg-neutral-50" : " "
       }`}
     >

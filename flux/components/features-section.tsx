@@ -376,7 +376,7 @@ export const Features = () => {
             From idea production in four simple steps
           </p>
         </div>
-        <div className=" mt-4   grid grid-cols-1  sm:grid-cols-2  w-full">
+        <div className=" mt-4  gap-3  grid grid-cols-1  sm:grid-cols-2  w-full">
           <div className="   p-1 ">
             <span className="text-primary font-sans font-medium text-sm">
               /001/
@@ -423,7 +423,7 @@ export const Features = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col items-center gap-3.5 justify-center py-6">
+      <div className="w-full flex flex-col items-center gap-3.5 justify-center py-2">
         <div className=" max-w-xl ">
           <h2 className=" tracking-tight text-3xl  lg:text-4xl text-center font-bold font-sans leading-normal">
             Open Source & Community Drive
