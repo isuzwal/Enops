@@ -13,16 +13,8 @@ export const HeroSection = () => {
   const Animationwords = () => {
     animate(
       "span",
-      {
-        opacity: 1,
-        filter: "blur(0px)",
-        y: 0,
-      },
-      {
-        duration: 0.3,
-        ease: "linear",
-        delay: stagger(0.03), // one by one
-      },
+      { opacity: 1, filter: "blur(0px)", y: 0 },
+      { duration: 1, ease: "easeInOut", delay: stagger(0.08) },
     );
   };
 
@@ -100,9 +92,9 @@ export const HeroSection = () => {
         </motion.div>
         <motion.p
           ref={scope}
-          className="text-[14px]  inline-block   max-w-2xl    text-secondary-foreground/80   text-start font-sans"
+          className="text-[14px]  max-w-2xl w-full  flex flex-wrap"
         >
-          {words.split("").map((char, index) => (
+          {words.split(" ").map((char, index) => (
             <motion.span
               style={{
                 opacity: 0,
@@ -110,8 +102,9 @@ export const HeroSection = () => {
                 y: 10,
               }}
               key={char + index}
+              className="inline-flex  text-sm  text-secondary-foreground/80   text-start font-sans"
             >
-              {char === " " ? "\u00A0" : char}
+              {char}&nbsp;
             </motion.span>
           ))}
         </motion.p>
