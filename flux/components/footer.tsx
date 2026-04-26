@@ -23,7 +23,7 @@ export const Footer = () => {
           delay: 0.3,
           ease: "easeOut",
         }}
-        className="w-full grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4"
+        className="w-full  md:gap-2 gap-8 grid grid-cols-2 lg:grid-cols-4 "
       >
         <div className="">
           <div className="flex items-center gap-1">
@@ -43,68 +43,74 @@ export const Footer = () => {
               enops.dev
             </Link>
           </div>
-          <p className=" max-w-xs  w-full  text-left text-foreground/80 font-sans text-[12px]">
+          <p className=" max-w-xs  w-full font-medium  text-left text-foreground/80 font-sans text-[12px]">
             An AI-powered platform to design, visualize, optimize, and export
             database schemas
           </p>
         </div>
-        <div className="   flex flex-col  items-start sm:items-center gap-0.5">
-          <h1 className="text-primary font-sans text-[14px] ">/NAVIGATION/</h1>
+        <div className="  flex flex-col   items-center gap-0.5">
+          <h1 className="text-primary font-sans text-[14px]  flex  justify-start sm:justify-center w-full">
+            /NAVIGATION/
+          </h1>
           <div
-            className="  flex  flex-col  justify-start items-start
+            className="  flex  flex-col justify-start items-start
               w-full  sm:w-[6rem]   gap-3"
           >
             <Link
               href="#features"
-              className=" text-xs font-sans  font-medium text-foreground/80 leading-none"
+              className=" text-xs font-sans  hover:text-foreground/50 duration-300 ease-in-out transition-all font-medium text-foreground/80 leading-none"
             >
               Features
             </Link>
             <Link
               href="#faq"
-              className=" text-xs  font-medium font-sans text-foreground/80  leading-none"
+              className=" text-xs font-sans  hover:text-foreground/50 duration-300 ease-in-out transition-all font-medium text-foreground/80 leading-none"
             >
               FAQ
             </Link>
             <Link
               href="#pricing"
-              className=" text-xs font-sans   font-medium  text-foreground/80 leading-0"
+              className=" text-xs font-sans  hover:text-foreground/50 duration-300 ease-in-out transition-all font-medium text-foreground/80 leading-none"
             >
               Pricing
             </Link>
           </div>
         </div>
-        <div className="   flex flex-col  items-start sm:items-center gap-0.5">
-          <h1 className="text-primary font-sans text-[14px] ">/RESOURCES/</h1>
+        <div className="   flex flex-col  items-center  gap-0.5">
+          <h1 className="text-primary font-sans text-[14px]  flex  justify-start md:justify-center w-full ">
+            /RESOURCES/
+          </h1>
           <div
             className="  flex  flex-col  justify-start items-start
-             w-full  sm:w-[6rem]   gap-4"
+             w-full  md:w-[6rem]   gap-4"
           >
             <Link
               href="#pricing"
-              className="text-xs font-sans   font-medium  text-foreground/80  leading-none"
+              className=" text-xs font-sans  hover:text-foreground/50 duration-300 ease-in-out transition-all font-medium text-foreground/80 leading-none"
             >
               Privacy Policy
             </Link>
             <Link
               href="#"
-              className=" text-xs font-sans   font-medium  text-foreground/80 leading-0"
+              className=" text-xs font-sans  hover:text-foreground/50 duration-300 ease-in-out transition-all font-medium text-foreground/80 leading-none"
             >
               404 Page
             </Link>
           </div>
         </div>
-        <div className="  flex flex-col items-start md:items-center gap-0.5">
-          <h1 className="text-primary font-sans text-[16px] ">/SOCIAL/</h1>
+        <div className="  flex flex-col items-center gap-0.5">
+          <h1 className="text-primary font-sans text-[14px] flex  justify-start sm:justify-center w-full  ">
+            /SOCIAL/
+          </h1>
           <div
             className="  flex  flex-col  justify-start items-start
               w-full sm:w-[5rem]   gap-3"
           >
             <Link
               href="#"
-              className="  flex  items-center text-xs    text-foreground/80  gap-1 font-sans  font-medium leading-0"
+              className=" text-xs font-sans flex items-center gap-0.5  hover:text-foreground/50 duration-300 ease-in-out transition-all font-medium text-foreground/80 leading-none"
             >
-              <Twitter className="size-4 fill-primary text-primary " />{" "}
+              <Twitter className="size-3.5 fill-primary text-primary " />{" "}
               <span>Twitter</span>
             </Link>
           </div>
